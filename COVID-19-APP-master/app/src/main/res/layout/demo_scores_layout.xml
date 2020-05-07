@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+
+    <TextView
+        android:id="@+id/time_diff_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"/>
+
+    <TextView
+        android:id="@+id/people_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="People Near: "/>
+
+    <TextView
+        android:id="@+id/trips_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trips Taken: "/>
+
+    <TextView
+        android:id="@+id/score_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: "/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/age_min_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Age Min: 0" />
+
+        <TextView
+            android:id="@+id/age_max_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Age Max: 99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/demographics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.edmodo.rangebar.RangeBar
+            android:id="@+id/ageBar"
+            android:layout_width="199dp"
+            android:layout_height="match_parent" />
+
+        <Spinner
+            android:id="@+id/sexSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textSize = "15sp"
+            android:text="1 Day" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize = "15sp"
+            android:text="7 Days"  />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize = "15sp"
+            android:text="14 Days" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize = "15sp"
+            android:text="30 Days" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
